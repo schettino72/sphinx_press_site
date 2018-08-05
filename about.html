@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>About</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="#" />
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Configuration" href="configuration.html" />
+  <link rel="prev" title="sphinx_press_theme’s documentation" href="index.html" /> 
+  </head>
+
+  <body><div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    <span class="site-name">sphinx_press_theme</span>
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  <div class="nav-item">
+    <a href="#"
+       class="nav-link  router-link-active">
+       Docs
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="theme-demo/basic.html"
+       class="nav-link ">
+       Demo
+    </a>
+  </div>
+
+<div class="nav-item">
+  <a href="https://github.com/schettino72/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  <div class="nav-item">
+    <a href="#"
+       class="nav-link  router-link-active">
+       Docs
+    </a>
+  </div>
+
+  <div class="nav-item">
+    <a href="theme-demo/basic.html"
+       class="nav-link ">
+       Demo
+    </a>
+  </div>
+
+<div class="nav-item">
+  <a href="https://github.com/schettino72/sphinx_press_theme"
+     class="nav-link external">
+       Github <outboundlink/>
+  </a>
+</div>
+            
+          </navlinks><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+  <div class="sidebar-group">
+    <p class="caption"><span class="caption-text">Docs</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#status">Status</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Demo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="theme-demo/basic.html">Basic Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme-demo/admonition.html">Admonitions</a></li>
+</ul>
+
+  </div>
+</div>
+        </sidebar>
+
+      <page>
+          <div class="content">
+            
+  <div class="section" id="about">
+<h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
+<p>Sphinx Press is a modern responsive theme for python’s
+<a class="reference external" href="http://www.sphinx-doc.org">Sphinx docs</a>.</p>
+<p>This theme is based on <a class="reference external" href="https://vuepress.vuejs.org/">VuePress</a>.
+It uses <a class="reference external" href="https://vuejs.org/">Vue.js</a> &amp;
+<a class="reference external" href="http://stylus-lang.com/">Stylus</a> managed by
+<a class="reference external" href="https://webpack.js.org/">webpack</a>
+(through <a class="reference external" href="https://cli.vuejs.org/">vue-cli</a>).</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>First install the theme:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install sphinx_press_theme
+</pre></div>
+</div>
+<p>On Sphinx project’s <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>: set the theme name to <code class="docutils literal notranslate"><span class="pre">press</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;press&quot;</span>
+</pre></div>
+</div>
+<p>See details on <a class="reference external" href="http://www.sphinx-doc.org/en/master/theming.html#using-a-theme">Sphinx theming docs</a>.</p>
+</div>
+<div class="section" id="status">
+<h2>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h2>
+<p><strong>Press</strong> theme is still in <strong>ALFA</strong>, some core Sphinx features
+still not available.</p>
+<p>Contributions are welcome.</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner">
+  <span class="prev">
+    <a href="index.html"
+       title="previous chapter">← sphinx_press_theme’s documentation</a>
+  </span>
+  <span class="next">
+    <a href="configuration.html"
+       title="next chapter">Configuration →</a>
+  </span>
+<div class="footer" role="contentinfo">
+      &#169; Copyright 2018, Eduardo Naufel Schettino.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+  </div></body>
+</html>
