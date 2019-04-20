@@ -1,0 +1,28 @@
+=======
+Changes
+=======
+
+
+0.3.0 (*unreleased*)
+====================
+
+- require Sphinx >= 2.0
+- inherit from `basic` theme (previously `none`)
+- support search
+- support showing logo
+- add breadcrumbs
+- add page navigation on page top
+- fix #12: load extensions JS files
+
+
+0.2.0 (*2019-03-19*)
+====================
+
+- added template domainindex.html
+
+
+0.1.0 (*2018-08-07*)
+====================
+
+- initial release
+

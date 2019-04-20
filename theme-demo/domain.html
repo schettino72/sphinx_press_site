@@ -8,18 +8,31 @@
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
       
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
       <script src="../_static/theme-vendors.js"></script>
       <script src="../_static/theme.js" defer></script>
     
   <link rel="author" title="About these documents" href="../about.html" />
   <link rel="index" title="Index" href="../genindex.html" />
   <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Extensions" href="extensions.html" />
   <link rel="prev" title="Admonitions" href="admonition.html" /> 
   </head>
 
   <body><div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
   <router-link to="../index.html" class="home-link">
-    <span class="site-name">sphinx_press_theme</span>
+    
+      <span class="site-name">sphinx_press_theme</span>
+    
   </router-link>
 
   <div class="links">
@@ -33,8 +46,8 @@
   </div>
 
   <div class="nav-item">
-    <a href="basic.html"
-       class="nav-link  router-link-active">
+    <a href="index.html"
+       class="nav-link ">
        Demo
     </a>
   </div>
@@ -65,8 +78,8 @@
   </div>
 
   <div class="nav-item">
-    <a href="basic.html"
-       class="nav-link  router-link-active">
+    <a href="index.html"
+       class="nav-link ">
        Demo
     </a>
   </div>
@@ -78,21 +91,34 @@
   </a>
 </div>
             
-          </navlinks><div class="sidebar-links" role="navigation" aria-label="main navigation">
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
   
   <div class="sidebar-group">
     <p class="caption"><span class="caption-text">Docs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../who.html">Who is using <strong>Press</strong> Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Changes</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Demo</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic Specification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admonition.html">Admonitions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">domain</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-foo">python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#autodoc">autodoc</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Demo</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="basic.html">Basic Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admonition.html">Admonitions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">domain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html">Extensions</a></li>
 </ul>
 </li>
 </ul>
@@ -102,7 +128,31 @@
         </sidebar>
 
       <page>
-          <div class="content">
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="index.html">Demo</a> &raquo;</li>
+    
+    <li>domain</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="admonition.html"
+       title="previous chapter">← Admonitions</a>
+  </li>
+  <li class="next">
+    <a href="extensions.html"
+       title="next chapter">Extensions →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
             
   <div class="section" id="domain">
 <h1>domain<a class="headerlink" href="#domain" title="Permalink to this headline">¶</a></h1>
@@ -136,38 +186,38 @@ In text mode, if encoding is not specified the encoding used is platform
 dependent: locale.getpreferredencoding(False) is called to get the
 current locale encoding. (For reading and writing raw bytes use binary
 mode and leave encoding unspecified.) The available modes are:</p>
-<table border="1" class="docutils">
+<table class="docutils align-center">
 <colgroup>
-<col width="13%" />
-<col width="88%" />
+<col style="width: 13%" />
+<col style="width: 88%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Character</td>
-<td>Meaning</td>
+<tbody>
+<tr class="row-odd"><td><p>Character</p></td>
+<td><p>Meaning</p></td>
 </tr>
-<tr class="row-even"><td>‘r’</td>
-<td>open for reading (default)</td>
+<tr class="row-even"><td><p>‘r’</p></td>
+<td><p>open for reading (default)</p></td>
 </tr>
-<tr class="row-odd"><td>‘w’</td>
-<td>open for writing, truncating the file first</td>
+<tr class="row-odd"><td><p>‘w’</p></td>
+<td><p>open for writing, truncating the file first</p></td>
 </tr>
-<tr class="row-even"><td>‘x’</td>
-<td>create a new file and open it for writing</td>
+<tr class="row-even"><td><p>‘x’</p></td>
+<td><p>create a new file and open it for writing</p></td>
 </tr>
-<tr class="row-odd"><td>‘a’</td>
-<td>open for writing, appending to the end of the file if it exists</td>
+<tr class="row-odd"><td><p>‘a’</p></td>
+<td><p>open for writing, appending to the end of the file if it exists</p></td>
 </tr>
-<tr class="row-even"><td>‘b’</td>
-<td>binary mode</td>
+<tr class="row-even"><td><p>‘b’</p></td>
+<td><p>binary mode</p></td>
 </tr>
-<tr class="row-odd"><td>‘t’</td>
-<td>text mode (default)</td>
+<tr class="row-odd"><td><p>‘t’</p></td>
+<td><p>text mode (default)</p></td>
 </tr>
-<tr class="row-even"><td>‘+’</td>
-<td>open a disk file for updating (reading and writing)</td>
+<tr class="row-even"><td><p>‘+’</p></td>
+<td><p>open a disk file for updating (reading and writing)</p></td>
 </tr>
-<tr class="row-odd"><td>‘U’</td>
-<td>universal newline mode (deprecated)</td>
+<tr class="row-odd"><td><p>‘U’</p></td>
+<td><p>universal newline mode (deprecated)</p></td>
 </tr>
 </tbody>
 </table>
@@ -191,13 +241,13 @@ line buffering (only usable in text mode), and an integer &gt; 1 to indicate
 the size of a fixed-size chunk buffer.  When no buffering argument is
 given, the default buffering policy works as follows:</p>
 <ul class="simple">
-<li>Binary files are buffered in fixed-size chunks; the size of the buffer
+<li><p>Binary files are buffered in fixed-size chunks; the size of the buffer
 is chosen using a heuristic trying to determine the underlying device’s
 “block size” and falling back on <cite>io.DEFAULT_BUFFER_SIZE</cite>.
-On many systems, the buffer will typically be 4096 or 8192 bytes long.</li>
-<li>“Interactive” text files (files for which isatty() returns True)
+On many systems, the buffer will typically be 4096 or 8192 bytes long.</p></li>
+<li><p>“Interactive” text files (files for which isatty() returns True)
 use line buffering.  Other text files use the policy described above
-for binary files.</li>
+for binary files.</p></li>
 </ul>
 <p>encoding is the name of the encoding used to decode or encode the
 file. This should only be used in text mode. The default encoding is
@@ -214,18 +264,18 @@ for a list of the permitted encoding error strings.</p>
 mode). It can be None, ‘’, ‘n’, ‘r’, and ‘rn’.  It works as
 follows:</p>
 <ul class="simple">
-<li>On input, if newline is None, universal newlines mode is
+<li><p>On input, if newline is None, universal newlines mode is
 enabled. Lines in the input can end in ‘n’, ‘r’, or ‘rn’, and
 these are translated into ‘n’ before being returned to the
 caller. If it is ‘’, universal newline mode is enabled, but line
 endings are returned to the caller untranslated. If it has any of
 the other legal values, input lines are only terminated by the given
-string, and the line ending is returned to the caller untranslated.</li>
-<li>On output, if newline is None, any ‘n’ characters written are
+string, and the line ending is returned to the caller untranslated.</p></li>
+<li><p>On output, if newline is None, any ‘n’ characters written are
 translated to the system default line separator, os.linesep. If
 newline is ‘’ or ‘n’, no translation takes place. If newline is any
 of the other legal values, any ‘n’ characters written are translated
-to the given string.</li>
+to the given string.</p></li>
 </ul>
 <p>If closefd is False, the underlying file descriptor will be kept open
 when the file is closed. This does not work when a file name is given
@@ -255,15 +305,19 @@ opened in a binary mode.</p>
 
           </div>
           <div class="page-nav">
-            <div class="inner">
-  <span class="prev">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
     <a href="admonition.html"
        title="previous chapter">← Admonitions</a>
-  </span>
-<div class="footer" role="contentinfo">
+  </li>
+  <li class="next">
+    <a href="extensions.html"
+       title="next chapter">Extensions →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
       &#169; Copyright 2018, Eduardo Naufel Schettino.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

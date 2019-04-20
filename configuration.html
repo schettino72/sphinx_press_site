@@ -8,19 +8,31 @@
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
       
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
       <script src="_static/theme-vendors.js"></script>
       <script src="_static/theme.js" defer></script>
     
   <link rel="author" title="About these documents" href="about.html" />
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
-  <link rel="next" title="Basic Specification" href="theme-demo/basic.html" />
+  <link rel="next" title="Who is using Press Theme" href="who.html" />
   <link rel="prev" title="About" href="about.html" /> 
   </head>
 
   <body><div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
   <router-link to="index.html" class="home-link">
-    <span class="site-name">sphinx_press_theme</span>
+    
+      <span class="site-name">sphinx_press_theme</span>
+    
   </router-link>
 
   <div class="links">
@@ -34,7 +46,7 @@
   </div>
 
   <div class="nav-item">
-    <a href="theme-demo/basic.html"
+    <a href="theme-demo/index.html"
        class="nav-link ">
        Demo
     </a>
@@ -66,7 +78,7 @@
   </div>
 
   <div class="nav-item">
-    <a href="theme-demo/basic.html"
+    <a href="theme-demo/index.html"
        class="nav-link ">
        Demo
     </a>
@@ -79,7 +91,18 @@
   </a>
 </div>
             
-          </navlinks><div class="sidebar-links" role="navigation" aria-label="main navigation">
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
   
   <div class="sidebar-group">
     <p class="caption"><span class="caption-text">Docs</span></p>
@@ -90,12 +113,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#templates">templates</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="who.html">Who is using <strong>Press</strong> Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changes</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Demo</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="theme-demo/basic.html">Basic Specification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="theme-demo/admonition.html">Admonitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="theme-demo/domain.html">domain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme-demo/index.html">Demo</a></li>
 </ul>
 
   </div>
@@ -103,7 +126,29 @@
         </sidebar>
 
       <page>
-          <div class="content">
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>Configuration</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="about.html"
+       title="previous chapter">← About</a>
+  </li>
+  <li class="next">
+    <a href="who.html"
+       title="next chapter">Who is using <strong>Press</strong> Theme →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
             
   <div class="section" id="configuration">
 <h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
@@ -114,11 +159,18 @@ from main templates. Those can be easily replaced by theme users.</p>
 <p>Jinja2 templates and blocks are organized as follow:</p>
 <div class="section" id="config-values">
 <h2>Config values<a class="headerlink" href="#config-values" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="html-logo">
+<h3><code class="docutils literal notranslate"><span class="pre">html_logo</span></code><a class="headerlink" href="#html-logo" title="Permalink to this headline">¶</a></h3>
+<p>If defined shows an image instead of project name on page top-left (link to index page).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;_static/myproject-logo.png&#39;</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="html-sidebars">
 <h3><code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code><a class="headerlink" href="#html-sidebars" title="Permalink to this headline">¶</a></h3>
-<p>By default the <em>sidebars</em> include only a global TOC tree.
+<p>By default the <em>sidebars</em> include only: searchbox and a global TOC tree.
 See docs on <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars">html_sidebars</a>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;**&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;util/sidetoc.html&#39;</span><span class="p">]}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;**&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;util/searchbox.html&#39;</span><span class="p">,</span> <span class="s1">&#39;util/sidetoc.html&#39;</span><span class="p">]}</span>
 </pre></div>
 </div>
 </div>
@@ -129,26 +181,30 @@ See docs on <a class="reference external" href="http://www.sphinx-doc.org/en/mas
 <h3><code class="docutils literal notranslate"><span class="pre">layout.html</span></code><a class="headerlink" href="#layout-html" title="Permalink to this headline">¶</a></h3>
 <p>Blocks on HTML head:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">htmltitle</span></code> - HTML page title</li>
-<li><code class="docutils literal notranslate"><span class="pre">css</span></code> - include theme’s CSS files</li>
-<li><code class="docutils literal notranslate"><span class="pre">scripts</span></code> - include theme’s javascript files</li>
-<li><code class="docutils literal notranslate"><span class="pre">extrahead</span></code> - empty by default, to be used by theme users</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">htmltitle</span></code> - HTML page title</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">css</span></code> - include theme’s CSS files</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scripts</span></code> - include theme’s javascript files</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">extrahead</span></code> - empty by default, to be used by theme users</p></li>
 </ul>
 <p>Blocks on HTML body:</p>
 <p><code class="docutils literal notranslate"><span class="pre">container</span></code> - whole visible page</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">header</span></code> - fixed header (includes <code class="docutils literal notranslate"><span class="pre">util/navbar.html</span></code>)<ul>
-<li><code class="docutils literal notranslate"><span class="pre">navbar.html</span></code> - apart from home-link includes <code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">header</span></code> - fixed header (includes <code class="docutils literal notranslate"><span class="pre">util/navbar.html</span></code>)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">navbar.html</span></code> - apart from home-link includes <code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code></p></li>
 </ul>
 </li>
-<li><code class="docutils literal notranslate"><span class="pre">sidebar</span></code><ul>
-<li><code class="docutils literal notranslate"><span class="pre">side_links</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code></li>
-<li>include all templates listed on <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> config</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sidebar</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">side_links</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/navlinks.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code></p></li>
+<li><p>include all templates listed on <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> config</p></li>
 </ul>
 </li>
-<li><code class="docutils literal notranslate"><span class="pre">document</span></code><ul>
-<li><code class="docutils literal notranslate"><span class="pre">body</span></code> - main content generated from ReST documents</li>
-<li><code class="docutils literal notranslate"><span class="pre">footer</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/pagenav.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/footer.html</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">document</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">body_header</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/bodyheader.html</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">body</span></code> - main content generated from ReST documents</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">footer</span></code> - includes <code class="docutils literal notranslate"><span class="pre">util/pagenav.html</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">util/footer.html</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -166,9 +222,17 @@ See docs on <a class="reference external" href="http://www.sphinx-doc.org/en/mas
 <h3><code class="docutils literal notranslate"><span class="pre">util/extlinks.html</span></code><a class="headerlink" href="#util-extlinks-html" title="Permalink to this headline">¶</a></h3>
 <p>External links defined by theme’s user.</p>
 </div>
+<div class="section" id="util-searchbox-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/searchbox.html</span></code><a class="headerlink" href="#util-searchbox-html" title="Permalink to this headline">¶</a></h3>
+<p>Form to perform site search.</p>
+</div>
 <div class="section" id="util-sidetoc-html">
 <h3><code class="docutils literal notranslate"><span class="pre">util/sidetoc.html</span></code><a class="headerlink" href="#util-sidetoc-html" title="Permalink to this headline">¶</a></h3>
 <p>Navigation from toctree.</p>
+</div>
+<div class="section" id="util-bodyheader-html">
+<h3><code class="docutils literal notranslate"><span class="pre">util/bodyheader.html</span></code><a class="headerlink" href="#util-bodyheader-html" title="Permalink to this headline">¶</a></h3>
+<p>Breadcrumbs and page navigation.</p>
 </div>
 <div class="section" id="util-pagenav-html">
 <h3><code class="docutils literal notranslate"><span class="pre">util/pagenav.html</span></code><a class="headerlink" href="#util-pagenav-html" title="Permalink to this headline">¶</a></h3>
@@ -184,19 +248,19 @@ See docs on <a class="reference external" href="http://www.sphinx-doc.org/en/mas
 
           </div>
           <div class="page-nav">
-            <div class="inner">
-  <span class="prev">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
     <a href="about.html"
        title="previous chapter">← About</a>
-  </span>
-  <span class="next">
-    <a href="theme-demo/basic.html"
-       title="next chapter">Basic Specification →</a>
-  </span>
-<div class="footer" role="contentinfo">
+  </li>
+  <li class="next">
+    <a href="who.html"
+       title="next chapter">Who is using <strong>Press</strong> Theme →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
       &#169; Copyright 2018, Eduardo Naufel Schettino.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

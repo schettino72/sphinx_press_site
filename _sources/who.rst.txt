@@ -1,0 +1,8 @@
+Who is using **Press** Theme
+============================
+
+If you this theme please add your site below:
+
+
+- `Crudcast <https://crudcast.readthedocs.io/en/latest/>`_
+- `Friendly ML Tutorial <https://aunnnn.github.io/ml-tutorial/html/index.html>`_
