@@ -3,6 +3,13 @@ Changes
 =======
 
 
+0.4.0 (*2019-05-27*)
+====================
+
+- fix reading cached toctree data
+- fix navlinks that contain `#` anchors
+
+
 0.3.0 (*2019-04-22*)
 ====================
 

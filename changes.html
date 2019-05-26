@@ -28,7 +28,8 @@
   <link rel="prev" title="Who is using Press Theme" href="who.html" /> 
   </head>
 
-  <body><div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
   <router-link to="index.html" class="home-link">
     
       <span class="site-name">sphinx_press_theme</span>
@@ -49,7 +50,7 @@
     <div class="nav-item">
       <a href="theme-demo/index.html#demo"
          class="nav-link ">
-         Demo
+         demo
       </a>
     </div>
   
@@ -83,7 +84,7 @@
     <div class="nav-item">
       <a href="theme-demo/index.html#demo"
          class="nav-link ">
-         Demo
+         demo
       </a>
     </div>
   
@@ -137,11 +138,13 @@
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#id1" class="reference internal">0.3.0 (2019-04-22)</a></li>
+                  <li class="toctree-l2"><a href="#id1" class="reference internal">0.4.0 (2019-05-27)</a></li>
                 
-                  <li class="toctree-l2"><a href="#id2" class="reference internal">0.2.0 (2019-03-19)</a></li>
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">0.3.0 (2019-04-22)</a></li>
                 
-                  <li class="toctree-l2"><a href="#id3" class="reference internal">0.1.0 (2018-08-07)</a></li>
+                  <li class="toctree-l2"><a href="#id3" class="reference internal">0.2.0 (2019-03-19)</a></li>
+                
+                  <li class="toctree-l2"><a href="#id4" class="reference internal">0.1.0 (2018-08-07)</a></li>
                 
               </ul>
             
@@ -153,7 +156,7 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="theme-demo/index.html#demo">Demo</a></span>
+        <span class="caption-text"><a href="theme-demo/index.html#demo">demo</a></span>
       </p>
       <ul class="">
         
@@ -215,7 +218,14 @@
   <div class="section" id="changes">
 <h1>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>0.3.0 (<em>2019-04-22</em>)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>0.4.0 (<em>2019-05-27</em>)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>fix reading cached toctree data</p></li>
+<li><p>fix navlinks that contain <cite>#</cite> anchors</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>0.3.0 (<em>2019-04-22</em>)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>require Sphinx &gt;= 2.0</p></li>
 <li><p>inherit from <cite>basic</cite> theme (previously <cite>none</cite>)</p></li>
@@ -228,14 +238,14 @@
 <li><p>no navlinks to toctree if there is only one toctree defined</p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h2>0.2.0 (<em>2019-03-19</em>)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>0.2.0 (<em>2019-03-19</em>)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>added template domainindex.html</p></li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h2>0.1.0 (<em>2018-08-07</em>)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>0.1.0 (<em>2018-08-07</em>)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>initial release</p></li>
 </ul>
@@ -262,5 +272,8 @@
             </div>
           </div>
       </page>
-  </div></body>
+    </div>
+    
+    
+  </body>
 </html>
