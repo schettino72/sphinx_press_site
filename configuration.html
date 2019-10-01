@@ -7,6 +7,7 @@
     
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
       
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
 
@@ -128,7 +129,7 @@
                 
                   <li class="toctree-l2"><a href="#config-values" class="reference internal">Config values</a></li>
                 
-                  <li class="toctree-l2"><a href="#templates" class="reference internal">templates</a></li>
+                  <li class="toctree-l2"><a href="#templates" class="reference internal">Templates</a></li>
                 
               </ul>
             
@@ -168,7 +169,7 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="theme-demo/domain.html" class="reference internal ">domain</a>
+          <li class="toctree-l1 "><a href="theme-demo/domain.html" class="reference internal ">Domain</a>
 
             
           </li>
@@ -235,9 +236,29 @@ See docs on <a class="reference external" href="http://www.sphinx-doc.org/en/mas
 </pre></div>
 </div>
 </div>
+<div class="section" id="html-css-files">
+<h3><code class="docutils literal notranslate"><span class="pre">html_css_files</span></code><a class="headerlink" href="#html-css-files" title="Permalink to this headline">¶</a></h3>
+<p>Adds custom CSS files to the theme</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we assume that the file is at _static/css/custom.css</span>
+<span class="n">html_css_files</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;css/custom.css&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html-external-links">
+<h3><code class="docutils literal notranslate"><span class="pre">html_external_links</span></code><a class="headerlink" href="#html-external-links" title="Permalink to this headline">¶</a></h3>
+<p>If provided, creates external links (e.g. Github) in the top right corner:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;external_links&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">(</span><span class="s2">&quot;Github&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/username/repo&quot;</span><span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;Other&quot;</span><span class="p">,</span> <span class="s2">&quot;https://bla.com&quot;</span><span class="p">)</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="templates">
-<h2>templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h2>
+<h2>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="layout-html">
 <h3><code class="docutils literal notranslate"><span class="pre">layout.html</span></code><a class="headerlink" href="#layout-html" title="Permalink to this headline">¶</a></h3>
 <p>Blocks on HTML head:</p>
@@ -321,7 +342,7 @@ See docs on <a class="reference external" href="http://www.sphinx-doc.org/en/mas
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2018, Eduardo Naufel Schettino.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>
