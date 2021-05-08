@@ -7,20 +7,20 @@
       <title>Index</title>
     
       <link rel="stylesheet" href="_static/pygments.css">
-      <link rel="stylesheet" href="_static/theme.css">
+      <!-- bundled in js (rollup iife) -->
+      <!-- <link rel="stylesheet" href="_static/theme.css"> -->
       <link rel="stylesheet" href="_static/sphinx_press_theme.css">
       
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
 
       
-      <script src="_static/theme-vendors.js"></script>
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
       <script src="_static/theme.js" defer></script>
     
   <link rel="author" title="About these documents" href="about.html" />
@@ -115,7 +115,7 @@
       </p>
       <ul class="">
         
-          <li class="toctree-l1 "><a href="about.html" class="reference internal ">About</a>
+          <li class="toctree-l1 "><a href="about.html" class="reference internal ">Getting Started</a>
 
             
           </li>
@@ -193,7 +193,7 @@
   
 </div>
 <hr>
-          <div class="content" role="main">
+          <div class="content" role="main" v-pre>
             
 
 <h1 id="index">Index</h1>
@@ -236,8 +236,13 @@
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="theme-demo/domain.html#module-foo">foo (module)</a>
+      <li>
+    foo
+
+      <ul>
+        <li><a href="theme-demo/domain.html#module-foo">module</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -258,6 +263,15 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="theme-demo/domain.html#sphinx.environment.collectors.EnvironmentCollector.merge_other">merge_other() (sphinx.environment.collectors.EnvironmentCollector method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    module
+
+      <ul>
+        <li><a href="theme-demo/domain.html#module-foo">foo</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -285,7 +299,7 @@
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2018, Eduardo Naufel Schettino.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>
