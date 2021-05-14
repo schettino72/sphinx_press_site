@@ -2,17 +2,19 @@
 <html >
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
       <title>Domain</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
-      <!-- bundled in js (rollup iife) -->
-      <!-- <link rel="stylesheet" href="../_static/theme.css"> -->
-      <link rel="stylesheet" href="../_static/sphinx_press_theme.css">
+      <link rel="stylesheet" href="../_static/theme.css">
+          <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/css/theme.css " type="text/css" />
       
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
@@ -226,22 +228,22 @@
 <hr>
           <div class="content" role="main" v-pre>
             
-  <div class="section" id="domain">
+  <section id="domain">
 <h1>Domain<a class="headerlink" href="#domain" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-foo">
+<section id="module-foo">
 <span id="python"></span><h2>Python<a class="headerlink" href="#module-foo" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt id="foo.spam">
-<code class="sig-prename descclassname"><span class="pre">foo.</span></code><code class="sig-name descname"><span class="pre">spam</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eggs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#foo.spam" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="foo.spam">
+<span class="sig-prename descclassname"><span class="pre">foo.</span></span><span class="sig-name descname"><span class="pre">spam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eggs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#foo.spam" title="Permalink to this definition">¶</a></dt>
 <dd><p>My spam</p>
 </dd></dl>
 
-</div>
-<div class="section" id="autofunction">
+</section>
+<section id="autofunction">
 <h2>autofunction<a class="headerlink" href="#autofunction" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt id="sphinx_press_theme.add_toctree_data">
-<code class="sig-prename descclassname"><span class="pre">sphinx_press_theme.</span></code><code class="sig-name descname"><span class="pre">add_toctree_data</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pagename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">templatename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctree</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_press_theme.add_toctree_data" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sphinx_press_theme.add_toctree_data">
+<span class="sig-prename descclassname"><span class="pre">sphinx_press_theme.</span></span><span class="sig-name descname"><span class="pre">add_toctree_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pagename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">templatename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctree</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sphinx_press_theme.add_toctree_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create toctree_data, used to build sidebar navigation</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -263,55 +265,55 @@ page is “highlighted”, and some part of TOC might be collapsed.</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="autoclass">
+</section>
+<section id="autoclass">
 <h2>autoclass<a class="headerlink" href="#autoclass" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="sphinx.environment.collectors.EnvironmentCollector">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">sphinx.environment.collectors.</span></code><code class="sig-name descname"><span class="pre">EnvironmentCollector</span></code><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sphinx.environment.collectors.EnvironmentCollector">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sphinx.environment.collectors.</span></span><span class="sig-name descname"><span class="pre">EnvironmentCollector</span></span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector" title="Permalink to this definition">¶</a></dt>
 <dd><p>An EnvironmentCollector is a specific data collector from each document.</p>
 <p>It gathers data and stores <code class="xref py py-class docutils literal notranslate"><span class="pre">BuildEnvironment</span></code> as a database.  Examples of specific
 data would be images, download files, section titles, metadatas, index
 entries and toctrees, etc.</p>
 <dl class="py method">
-<dt id="sphinx.environment.collectors.EnvironmentCollector.clear_doc">
-<code class="sig-name descname"><span class="pre">clear_doc</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docname</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.clear_doc" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sphinx.environment.collectors.EnvironmentCollector.clear_doc">
+<span class="sig-name descname"><span class="pre">clear_doc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docname</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.clear_doc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove specified data of a document.</p>
 <p>This method is called on the removal of the document.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="sphinx.environment.collectors.EnvironmentCollector.get_outdated_docs">
-<code class="sig-name descname"><span class="pre">get_outdated_docs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">added</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">removed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.get_outdated_docs" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sphinx.environment.collectors.EnvironmentCollector.get_outdated_docs">
+<span class="sig-name descname"><span class="pre">get_outdated_docs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">added</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">removed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.get_outdated_docs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of docnames to re-read.</p>
 <p>This methods is called before reading the documents.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="sphinx.environment.collectors.EnvironmentCollector.get_updated_docs">
-<code class="sig-name descname"><span class="pre">get_updated_docs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.get_updated_docs" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sphinx.environment.collectors.EnvironmentCollector.get_updated_docs">
+<span class="sig-name descname"><span class="pre">get_updated_docs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.get_updated_docs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of docnames to re-read.</p>
 <p>This methods is called after reading the whole of documents (experimental).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="sphinx.environment.collectors.EnvironmentCollector.merge_other">
-<code class="sig-name descname"><span class="pre">merge_other</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docnames</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.merge_other" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sphinx.environment.collectors.EnvironmentCollector.merge_other">
+<span class="sig-name descname"><span class="pre">merge_other</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">docnames</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">sphinx.environment.BuildEnvironment</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.merge_other" title="Permalink to this definition">¶</a></dt>
 <dd><p>Merge in specified data regarding docnames from a different <cite>BuildEnvironment</cite>
 object which coming from a subprocess in parallel builds.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="sphinx.environment.collectors.EnvironmentCollector.process_doc">
-<code class="sig-name descname"><span class="pre">process_doc</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctree</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">docutils.nodes.document</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.process_doc" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="sphinx.environment.collectors.EnvironmentCollector.process_doc">
+<span class="sig-name descname"><span class="pre">process_doc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Sphinx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doctree</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">docutils.nodes.document</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#sphinx.environment.collectors.EnvironmentCollector.process_doc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Process a document and gather specific data from it.</p>
 <p>This method is called after the document is read.</p>
 </dd></dl>
 
 </dd></dl>
 
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -328,7 +330,7 @@ object which coming from a subprocess in parallel builds.</p>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2018-present, Eduardo Naufel Schettino.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.6.1.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.7.0.
 </div>
             </div>
           </div>
